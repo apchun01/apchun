@@ -54,25 +54,29 @@ nav a:hover {
     cursor: pointer;
 }
 
-img {
-    max-width: 250px;
-    border-radius: 4px;
-    filter: grayscale(100%);
-    transition: 0.4s;
-    border: 1px solid #ddd;
-}
-
-img:hover {
-    filter: grayscale(0%);
-    box-shadow: 8px 8px 0px #003366; /* Clean "pop-out" effect */
-}
+/* 4. Image Styling with Right Float & Effects */
 img {
     float: right;           /* Pushes image to the right */
     margin-left: 30px;      /* Space between text and image */
     margin-bottom: 20px;    /* Space below the image */
-    max-width: 250px;       /* Keeps it a professional size */
+    max-width: 250px;       /* Professional size */
     height: auto;
-    border-radius: 4px;     /* Optional: slightly rounds the corners */
+    border-radius: 4px;
+    filter: grayscale(100%); /* B&W effect */
+    transition: 0.4s;        /* Smooth hover transition */
+    border: 1px solid #ddd;
+}
+
+img:hover {
+    filter: grayscale(0%);    /* Color returns on hover */
+    box-shadow: 8px 8px 0px #003366; /* Blue "pop-out" shadow */
+}
+
+/* Clearfix to prevent layout overlapping */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* This "clearfix" prevents the next section from jumping up into the image area */
