@@ -48,42 +48,26 @@ nav a:hover {
 
 /* 4. Subtle Digital Effects (The "Edgy" Accents) */
 
+/* 4. Image Styling */
 img {
-    display: block;       /* Forces the image onto its own line */
-    margin-left: 0;       /* Aligns it strictly to the left */
-    margin-top: 40px;     /* Space between your name and the image */
-    margin-bottom: 40px;  /* Space between the image and your bio text */
-    max-width: 250px;     /* Keeps the size clean and professional */
+    display: block;
+    margin-left: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    max-width: 250px;
     height: auto;
-    border-radius: 4px;   /* Subtle rounded corners */
+    border-radius: 4px;
+    /* This makes the blue border stay permanently */
+    box-shadow: 8px 8px 0px #003366; 
+    border: 1px solid #003366; /* Adds a thin line around the actual photo */
 }
 
-/* This "clearfix" is important; it prevents the background or 
-   following sections from breaking due to the floating image */
-section::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Optional: Subtle hover if you want the cursor to change, but no visual glitch */
+/* We can remove the hover effects now since it's permanent */
 img:hover {
     cursor: default;
 }
 
-img:hover {
-    filter: grayscale(0%);    /* Color returns on hover */
-    box-shadow: 8px 8px 0px #003366; /* Blue "pop-out" shadow */
-}
-
 /* Clearfix to prevent layout overlapping */
-section::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* This "clearfix" prevents the next section from jumping up into the image area */
 section::after {
     content: "";
     display: table;
