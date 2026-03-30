@@ -47,8 +47,10 @@ nav a:hover {
 
 /* 4. Subtle Digital Effects (The "Edgy" Accents) */
 .glitch:hover {
-    color: #ff00c1; /* Subtle pink flash on hover */
-    text-shadow: 2px 2px #00fff9; /* Cyan shadow for a digital feel */
+    color: #0077ff; /* A vibrant royal blue */
+    text-shadow: 
+        2px 2px #00d4ff,   /* A bright cyan/sky blue offset */
+        -2px -2px #003366; /* A deep navy offset for depth */
     cursor: pointer;
 }
 
@@ -99,7 +101,9 @@ footer {
 }
 
 .glitch:hover {
-    color: #ff00c1; /* Subtle pink flash */
-    text-shadow: 2px 2px #00fff9; /* Cyan "digital" shadow */
+    color: #0077ff; /* A vibrant royal blue */
+    text-shadow: 
+        2px 2px #00d4ff,   /* A bright cyan/sky blue offset */
+        -2px -2px #003366; /* A deep navy offset for depth */
     cursor: pointer;
 }
