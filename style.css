@@ -104,9 +104,10 @@ footer {
 /* --- Subtle Digital Effect (Glitch) --- */
 
 .highlight-title {
-    color: #003366;
-    font-weight: 400;     /* Normal weight */
-    font-style: italic;   /* Elegant academic look */
+    color: #003366;       /* Keeps the academic blue */
+    font-weight: 700;     /* Standard bold weight */
+    font-style: normal;   /* Removes the italics */
+    font-family: 'Inter', sans-serif;
 }
 /* Styling for bolded call-to-action text */
 strong {
