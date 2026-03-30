@@ -76,3 +76,15 @@ footer {
     color: #888;
     text-align: center;
 }
+/* --- Subtle Digital Effect (Glitch) --- */
+.glitch {
+    transition: 0.3s;
+    position: relative;
+    display: inline-block;
+}
+
+.glitch:hover {
+    color: #ff00c1; /* Subtle pink flash */
+    text-shadow: 2px 2px #00fff9; /* Cyan "digital" shadow */
+    cursor: pointer;
+}
