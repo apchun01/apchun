@@ -55,13 +55,13 @@ nav a:hover {
 }
 
 img {
-    float: right;
-    margin-left: 20px;
-    margin-top: 20px;       /* This lowers the image */
-    margin-bottom: 10px;
-    max-width: 250px;
+    display: block;       /* Forces the image onto its own line */
+    margin-left: 0;       /* Aligns it strictly to the left */
+    margin-top: 20px;     /* Space between your name and the image */
+    margin-bottom: 20px;  /* Space between the image and your bio text */
+    max-width: 250px;     /* Keeps the size clean and professional */
     height: auto;
-    border-radius: 4px;
+    border-radius: 4px;   /* Subtle rounded corners */
 }
 
 /* This "clearfix" is important; it prevents the background or 
