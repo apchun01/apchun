@@ -100,3 +100,7 @@ strong {
     display: block;       /* This puts it on its own new line for emphasis */
     margin-top: 15px;     /* Adds a little breathing room above it */
 }
+.journal-title {
+    font-style: italic;
+    color: #003366; /* Keeps it matching your blue theme */
+}
