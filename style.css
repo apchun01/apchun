@@ -55,12 +55,13 @@ nav a:hover {
 }
 
 img {
-    float: right;           /* This pushes the image to the right */
-    margin-left: 20px;      /* Creates space between the text and the image */
-    margin-bottom: 10px;    /* Creates space below the image */
-    max-width: 250px;       /* Keeps the image at a professional size */
+    float: right;
+    margin-left: 20px;
+    margin-top: 20px;       /* This lowers the image */
+    margin-bottom: 10px;
+    max-width: 250px;
     height: auto;
-    border-radius: 4px;     /* Optional: slightly rounds the corners */
+    border-radius: 4px;
 }
 
 /* This "clearfix" is important; it prevents the background or 
