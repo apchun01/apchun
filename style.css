@@ -1,43 +1,16 @@
 body {
-    background-color: #0f172a; /* Deep navy/black */
-    color: #f1f5f9; /* Off-white text */
-    font-family: 'Inter', sans-serif; /* A modern, "techy" font */
+    background-color: #0f172a;
+    color: #f1f5f9;
+    /* This applies the elegant Serif to your main text */
+    font-family: 'Playfair Display', serif; 
+    line-height: 1.8;
+    font-size: 1.1rem;
 }
 
-a {
-    color: #38bdf8; /* Bright neon blue */
-    transition: 0.3s;
-}
-
-a:hover {
-    color: #f472b6; /* Hot pink on hover */
-    text-shadow: 0 0 8px #f472b6;
-}
-section {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px dotted rgba(255, 255, 255, 0.2);
-    padding: 30px;
-    border-radius: 15px;
-    margin-bottom: 30px;
-}
-h1 {
-    font-size: 3.5rem;
+h1, h2, h3, nav a {
+    /* This applies the bold, modern Sans-Serif to your titles */
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
     text-transform: uppercase;
-    letter-spacing: -2px;
-    line-height: 0.9;
-    background: linear-gradient(to right, #38bdf8, #818cf8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-img {
-    filter: grayscale(100%);
-    transition: all 0.5s ease;
-    border: 1px solid #38bdf8;
-}
-
-img:hover {
-    filter: grayscale(0%);
-    transform: rotate(2deg) scale(1.05);
-    box-shadow: 10px 10px 0px #f472b6; /* Retro "offset" shadow */
+    letter-spacing: -1px;
 }
