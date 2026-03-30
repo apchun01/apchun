@@ -51,7 +51,7 @@ nav a:hover {
 img {
     display: block;       /* Forces the image onto its own line */
     margin-left: 0;       /* Aligns it strictly to the left */
-    margin-top: 20px;     /* Space between your name and the image */
+    margin-top: 40px;     /* Space between your name and the image */
     margin-bottom: 40px;  /* Space between the image and your bio text */
     max-width: 250px;     /* Keeps the size clean and professional */
     height: auto;
