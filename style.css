@@ -109,7 +109,7 @@ strong {
 /* This targets the paragraph specifically */
 .cta-text {
     display: block;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 /* This targets the bold text inside that paragraph */
