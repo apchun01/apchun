@@ -54,13 +54,21 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* 4. Simple Image Styling */
 img {
-    display: block;       /* Allows the image to be centered */
-    margin: 20px auto;    /* Centers it and adds space top/bottom */
-    max-width: 300px;     /* Adjust this to your preferred size */
+    float: right;           /* This pushes the image to the right */
+    margin-left: 20px;      /* Creates space between the text and the image */
+    margin-bottom: 10px;    /* Creates space below the image */
+    max-width: 250px;       /* Keeps the image at a professional size */
     height: auto;
-    border-radius: 4px;   /* Keeps a very subtle rounded corner */
+    border-radius: 4px;     /* Optional: slightly rounds the corners */
+}
+
+/* This "clearfix" is important; it prevents the background or 
+   following sections from breaking due to the floating image */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 /* Optional: Subtle hover if you want the cursor to change, but no visual glitch */
