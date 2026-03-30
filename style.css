@@ -121,3 +121,27 @@ strong {
     font-style: italic;
     color: #003366; /* Keeps it matching your blue theme */
 }
+/* CV-Specific Styling */
+.cv-section {
+    color: #003366;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 5px;
+    margin-top: 40px;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.cv-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cv-list li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.cv-list strong {
+    color: #003366;
+}
