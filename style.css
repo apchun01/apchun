@@ -64,6 +64,21 @@ img:hover {
     filter: grayscale(0%);
     box-shadow: 8px 8px 0px #003366; /* Clean "pop-out" effect */
 }
+img {
+    float: right;           /* Pushes image to the right */
+    margin-left: 30px;      /* Space between text and image */
+    margin-bottom: 20px;    /* Space below the image */
+    max-width: 250px;       /* Keeps it a professional size */
+    height: auto;
+    border-radius: 4px;     /* Optional: slightly rounds the corners */
+}
+
+/* This "clearfix" prevents the next section from jumping up into the image area */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /* 5. Content Layout */
 section {
