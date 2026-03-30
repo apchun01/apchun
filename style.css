@@ -13,9 +13,10 @@ body {
 /* 2. Professional Typography */
 h1 {
     font-size: 2.5rem;
-    color: #000000;
+    color: #003366; /* This is the Academic Blue matching your subheaders */
     margin-bottom: 10px;
     letter-spacing: -1px;
+    font-family: 'Inter', sans-serif;
 }
 
 h2, h3 {
@@ -46,13 +47,6 @@ nav a:hover {
 }
 
 /* 4. Subtle Digital Effects (The "Edgy" Accents) */
-.glitch:hover {
-    color: #0077ff; /* A vibrant royal blue */
-    text-shadow: 
-        2px 2px #00d4ff,   /* A bright cyan/sky blue offset */
-        -2px -2px #003366; /* A deep navy offset for depth */
-    cursor: pointer;
-}
 
 img {
     display: block;       /* Forces the image onto its own line */
@@ -108,19 +102,7 @@ footer {
     text-align: center;
 }
 /* --- Subtle Digital Effect (Glitch) --- */
-.glitch {
-    transition: 0.3s;
-    position: relative;
-    display: inline-block;
-}
 
-.glitch:hover {
-    color: #0077ff; /* A vibrant royal blue */
-    text-shadow: 
-        2px 2px #00d4ff,   /* A bright cyan/sky blue offset */
-        -2px -2px #003366; /* A deep navy offset for depth */
-    cursor: pointer;
-}
 .highlight-title {
     color: #003366;       /* The deep blue used in your headings */
     font-weight: 700;     /* Makes it bold */
