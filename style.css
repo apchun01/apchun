@@ -104,10 +104,9 @@ footer {
 /* --- Subtle Digital Effect (Glitch) --- */
 
 .highlight-title {
-    color: #003366;       /* The deep blue used in your headings */
-    font-weight: 700;     /* Makes it bold */
-    font-family: 'Inter', sans-serif; /* Keeps it modern and clean */
-    letter-spacing: 0.5px; /* Slight spacing for a modern, editorial feel */
+    color: #003366;
+    font-weight: 400;     /* Normal weight */
+    font-style: italic;   /* Elegant academic look */
 }
 /* Styling for bolded call-to-action text */
 strong {
