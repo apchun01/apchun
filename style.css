@@ -93,11 +93,10 @@ footer {
     font-style: normal;   /* Removes the italics */
     font-family: 'Inter', sans-serif;
 }
-/* General bold text (standard) */
 strong {
-    font-weight: 700;
-    color: inherit;
-    display: inline;
+    color: #003366;       /* This makes the bold text blue */
+    font-weight: 700;     /* Keeps it bold */
+    display: inline;      /* Ensures it stays inside the sentence/paragraph */
 }
 
 /* Specific styling for your call-to-action at the bottom */
