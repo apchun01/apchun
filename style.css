@@ -54,17 +54,18 @@ nav a:hover {
     cursor: pointer;
 }
 
-/* 4. Image Styling with Right Float & Effects */
+/* 4. Simple Image Styling */
 img {
-    float: right;           /* Pushes image to the right */
-    margin-left: 30px;      /* Space between text and image */
-    margin-bottom: 20px;    /* Space below the image */
-    max-width: 250px;       /* Professional size */
+    display: block;       /* Allows the image to be centered */
+    margin: 20px auto;    /* Centers it and adds space top/bottom */
+    max-width: 300px;     /* Adjust this to your preferred size */
     height: auto;
-    border-radius: 4px;
-    filter: grayscale(100%); /* B&W effect */
-    transition: 0.4s;        /* Smooth hover transition */
-    border: 1px solid #ddd;
+    border-radius: 4px;   /* Keeps a very subtle rounded corner */
+}
+
+/* Optional: Subtle hover if you want the cursor to change, but no visual glitch */
+img:hover {
+    cursor: default;
 }
 
 img:hover {
