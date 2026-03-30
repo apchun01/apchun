@@ -127,3 +127,10 @@ footer {
     font-family: 'Inter', sans-serif; /* Keeps it modern and clean */
     letter-spacing: 0.5px; /* Slight spacing for a modern, editorial feel */
 }
+/* Styling for bolded call-to-action text */
+strong {
+    color: #003366;       /* The same academic blue */
+    font-weight: 700;     /* Extra bold */
+    display: block;       /* This puts it on its own new line for emphasis */
+    margin-top: 15px;     /* Adds a little breathing room above it */
+}
