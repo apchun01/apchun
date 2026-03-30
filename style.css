@@ -99,11 +99,23 @@ strong {
     display: inline;      /* Ensures it stays inside the sentence/paragraph */
 }
 
-/* Specific styling for your call-to-action at the bottom */
+/* This targets the paragraph specifically */
 .cta-text {
     display: block;
-    color: #003366;
     margin-top: 15px;
+}
+
+/* This targets the bold text inside that paragraph */
+/* This targets the paragraph specifically */
+.cta-text {
+    display: block;
+    margin-top: 15px;
+}
+
+/* This targets the bold text inside that paragraph */
+.cta-text strong {
+    color: black;         /* Or use #333 for a dark charcoal */
+    font-weight: 700;     /* Keeps it bold */
 }
 .journal-title {
     font-style: italic;
