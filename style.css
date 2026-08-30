@@ -1,147 +1,130 @@
-/* 1. Global Reset */
+/* 1. Global Reset & Body Typography */
 body {
-    background-color: #ffffff;
-    color: #333333;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 40px 20px;
-    max-width: 800px;
-    margin: auto;
+  background-color: #ffffff;
+  color: #111111;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  line-height: 1.65;
+  font-size: 1.05rem;
+  margin: 0;
+  padding: 40px 20px;
+  max-width: 750px;
+  margin: auto;
 }
 
-/* 2. Professional Typography */
+/* 2. Headline & Title Typography */
 h1 {
-    font-size: 2.5rem;
-    color: #003366; /* This is the Academic Blue matching your subheaders */
-    margin-bottom: 10px;
-    letter-spacing: -1px;
-    font-family: 'Inter', sans-serif;
+  font-size: 2.75rem;
+  color: #111111;
+  margin-bottom: 15px;
+  letter-spacing: -0.5px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 900;
 }
 
 h2, h3 {
-    color: #003366; /* Deep Academic Blue */
-    margin-top: 40px;
-    border-bottom: 1px solid #eeeeee;
-    padding-bottom: 10px;
+  color: #111111;
+  margin-top: 40px;
+  border-bottom: 1px solid #111111;
+  padding-bottom: 10px;
+  font-family: 'Playfair Display', Georgia, serif;
 }
 
 /* 3. Navigation */
 nav {
-    margin-bottom: 50px;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #003366;
+  margin-bottom: 45px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #111111;
+  font-family: 'Libre Franklin', -apple-system, sans-serif;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.8px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #003366;
-    font-weight: 600;
-    margin-right: 20px;
-    transition: 0.2s;
+  text-decoration: none;
+  color: #111111;
+  font-weight: 600;
+  margin-right: 20px;
+  transition: 0.2s;
 }
 
 nav a:hover {
-    color: #0055aa;
-    text-decoration: underline;
+  color: #666666;
+  text-decoration: underline;
 }
-
-/* 4. Subtle Digital Effects (The "Edgy" Accents) */
 
 /* 4. Image Styling */
 img {
-    display: block;
-    margin-left: 0;
-    margin-top: 40px;
-    margin-bottom: 60px;
-    max-width: 250px;
-    height: auto;
-    border-radius: 4px;
-    /* This makes the blue border stay permanently */
-    box-shadow: 8px 8px 0px #003366; 
-    border: 1px solid #003366; /* Adds a thin line around the actual photo */
+  display: block;
+  margin-left: 0;
+  margin-top: 40px;
+  margin-bottom: 60px;
+  max-width: 250px;
+  height: auto;
+  border-radius: 0px;
+  box-shadow: 8px 8px 0px #111111;
+  border: 1px solid #111111;
+  filter: grayscale(100%);
 }
 
-/* We can remove the hover effects now since it's permanent */
 img:hover {
-    cursor: default;
+  cursor: default;
 }
 
-/* Clearfix to prevent layout overlapping */
-section::after {
-    content: "";
-    display: table;
-    clear: both;
+/* 5. Typography Helpers & Unbolding */
+strong {
+  color: inherit;
+  font-weight: normal;
 }
 
-/* 5. Content Layout */
+.cta-text strong {
+  color: inherit;
+  font-weight: normal;
+}
+
+.journal-title {
+  font-style: italic;
+  color: #111111;
+}
+
+a {
+  color: #111111;
+}
+
+/* 6. Content Layout & Footer */
 section {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 footer {
-    margin-top: 80px;
-    font-size: 0.9rem;
-    color: #888;
-    text-align: center;
-}
-/* --- Subtle Digital Effect (Glitch) --- */
-
-.highlight-title {
-    color: #003366;       /* Keeps the academic blue */
-    font-weight: 700;     /* Standard bold weight */
-    font-style: normal;   /* Removes the italics */
-    font-family: 'Inter', sans-serif;
-}
-strong {
-    color: #003366;       /* This makes the bold text blue */
-    font-weight: 700;     /* Keeps it bold */
-    display: inline;      /* Ensures it stays inside the sentence/paragraph */
+  margin-top: 80px;
+  font-size: 0.9rem;
+  color: #666666;
+  text-align: center;
 }
 
-/* This targets the paragraph specifically */
-.cta-text {
-    display: block;
-    margin-top: 15px;
-}
-
-/* This targets the bold text inside that paragraph */
-/* This targets the paragraph specifically */
-.cta-text {
-    display: block;
-    margin-top: 0px;
-}
-
-/* This targets the bold text inside that paragraph */
-.cta-text strong {
-    color: black;         /* Or use #333 for a dark charcoal */
-    font-weight: 700;     /* Keeps it bold */
-}
-.journal-title {
-    font-style: italic;
-    color: #003366; /* Keeps it matching your blue theme */
-}
 /* CV-Specific Styling */
 .cv-section {
-    color: #003366;
-    border-bottom: 2px solid #003366;
-    padding-bottom: 5px;
-    margin-top: 40px;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
+  color: #111111;
+  border-bottom: 2px solid #111111;
+  padding-bottom: 5px;
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
 .cv-list {
-    list-style-type: none;
-    padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .cv-list li {
-    margin-bottom: 12px;
-    line-height: 1.6;
+  margin-bottom: 12px;
+  line-height: 1.6;
 }
 
 .cv-list strong {
-    color: #003366;
+  color: #111111;
+  font-weight: normal;
 }
