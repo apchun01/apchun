@@ -1,130 +1,112 @@
-/* 1. Global Reset & Body Typography */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #111111;
+  --accent-color: #0000ee;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Page Reset & Base Styles */
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #ffffff;
-  color: #111111;
-  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
-  line-height: 1.65;
-  font-size: 1.05rem;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  line-height: 1.6;
   margin: 0;
-  padding: 40px 20px;
-  max-width: 750px;
-  margin: auto;
+  padding: 3rem 2rem;
+  display: flex;
+  gap: 4rem;
+  max-width: 1000px;
 }
 
-/* 2. Headline & Title Typography */
-h1 {
-  font-size: 2.75rem;
-  color: #111111;
-  margin-bottom: 15px;
-  letter-spacing: -0.5px;
-  font-family: 'Playfair Display', Georgia, serif;
-  font-weight: 900;
+/* Links */
+a {
+  color: var(--text-color);
+  text-decoration: underline;
 }
 
-h2, h3 {
-  color: #111111;
-  margin-top: 40px;
-  border-bottom: 1px solid #111111;
-  padding-bottom: 10px;
-  font-family: 'Playfair Display', Georgia, serif;
+a:hover {
+  color: var(--accent-color);
 }
 
-/* 3. Navigation */
+/* Left Sidebar Navigation */
 nav {
-  margin-bottom: 45px;
-  padding-bottom: 12px;
-  border-bottom: 2px solid #111111;
-  font-family: 'Libre Franklin', -apple-system, sans-serif;
-  text-transform: uppercase;
-  font-size: 0.85rem;
-  letter-spacing: 0.8px;
+  position: sticky;
+  top: 3rem;
+  height: fit-content;
+  min-width: 180px;
+}
+
+.nav-title {
+  text-decoration: none;
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-bottom: 0.4rem;
 }
 
 nav a {
   text-decoration: none;
-  color: #111111;
-  font-weight: 600;
-  margin-right: 20px;
-  transition: 0.2s;
 }
 
 nav a:hover {
-  color: #666666;
   text-decoration: underline;
 }
 
-/* 4. Image Styling */
-img {
-  display: block;
-  margin-left: 0;
-  margin-top: 40px;
-  margin-bottom: 60px;
-  max-width: 250px;
+/* Main Content Area */
+main {
+  max-width: 580px;
+  flex: 1;
+}
+
+section {
+  margin-bottom: 3.5rem;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 120px;
   height: auto;
-  border-radius: 0px;
-  box-shadow: 8px 8px 0px #111111;
-  border: 1px solid #111111;
-  filter: grayscale(100%);
+  margin-bottom: 1.5rem;
+  display: block;
 }
 
-img:hover {
-  cursor: default;
-}
-
-/* 5. Typography Helpers & Unbolding */
-strong {
-  color: inherit;
-  font-weight: normal;
-}
-
-.cta-text strong {
-  color: inherit;
-  font-weight: normal;
-}
-
+/* Subtle styling for journal titles */
 .journal-title {
   font-style: italic;
-  color: #111111;
 }
 
-a {
-  color: #111111;
-}
-
-/* 6. Content Layout & Footer */
-section {
-  margin-bottom: 40px;
-}
-
-footer {
-  margin-top: 80px;
-  font-size: 0.9rem;
-  color: #666666;
-  text-align: center;
-}
-
-/* CV-Specific Styling */
-.cv-section {
-  color: #111111;
-  border-bottom: 2px solid #111111;
-  padding-bottom: 5px;
-  margin-top: 40px;
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  letter-spacing: 1px;
-}
-
-.cv-list {
-  list-style-type: none;
-  padding-left: 0;
-}
-
-.cv-list li {
-  margin-bottom: 12px;
-  line-height: 1.6;
-}
-
-.cv-list strong {
-  color: #111111;
-  font-weight: normal;
+/* Responsive adjustment for mobile screens */
+@media (max-width: 650px) {
+  body {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+  }
+  
+  nav {
+    position: static;
+  }
 }
