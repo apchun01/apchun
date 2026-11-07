@@ -110,11 +110,13 @@ a:hover {
 
 /* Profile Image */
 .profile-img {
-  width: 110px;
+  width: 220px; /* Adjust this number to make it larger or smaller */
   height: auto;
-  border-radius: 2px;
-  margin-bottom: 2rem;
+  border-radius: 4px;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
 }
 
 /* Journal Titles */
