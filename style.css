@@ -1,3 +1,8 @@
+/* Smooth scrolling enabled globally */
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --bg-color: #000000;
   --text-color: #ffffff;
