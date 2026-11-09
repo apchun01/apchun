@@ -1,139 +1,24 @@
-/* Smooth scrolling enabled globally */
-html {
-  scroll-behavior: smooth;
-}
-
-:root {
-  --bg-color: #000000;
-  --text-color: #ffffff;
-  --text-muted: #aaaaaa;
-  --accent-color: #ffffff;
-  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
-
-/* Base Reset */
-* {
-  box-sizing: border-box;
-}
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  font-family: var(--font-mono);
-  font-size: 13.5px;
-  line-height: 1.65;
-  margin: 0;
-  padding: 4rem 3rem;
-  display: flex;
-  gap: 5rem;
-  max-width: 960px;
-  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: monospace; 
 }
 
-/* Left Sidebar Navigation */
-nav {
-  position: sticky;
-  top: 4rem;
-  height: fit-content;
-  min-width: 170px;
-}
 
-.nav-title {
-  color: #ffffff;
+a, 
+nav a, 
+.sidebar a {
+  color: #000000;
   text-decoration: none;
-  display: block;
-  margin-bottom: 2rem;
-  font-size: 13px;
-  letter-spacing: 0.8px;
-  text-transform: uppercase;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav li {
-  margin-bottom: 0.5rem;
-}
-
-nav a {
-  color: var(--text-color);
-  text-decoration: none;
-  transition: opacity 0.15s ease;
-}
-
+a:hover, 
 nav a:hover {
-  color: var(--accent-color);
-  opacity: 0.7;
-}
-
-/* Main Content Area */
-main {
-  max-width: 540px;
-  flex: 1;
-}
-
-section {
-  margin-bottom: 4rem;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1.25rem;
-}
-
-h3 {
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 1.5px;
-  color: #ffffff;
-  margin-top: 0;
-  margin-bottom: 1.25rem;
-  text-transform: uppercase;
-}
-
-/* Links */
-a {
-  color: #ffffff;
   text-decoration: underline;
-  text-decoration-color: #666666;
-  text-underline-offset: 3px;
-  transition: all 0.15s ease;
 }
 
-a:hover {
-  color: #ffffff;
-  text-decoration-color: #ffffff;
-}
 
-/* Profile Image */
-.profile-img {
-  width: 220px; /* Adjust this number to make it larger or smaller */
-  height: auto;
-  border-radius: 4px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 2rem;
-}
-
-/* Journal Titles */
-.journal-title {
-  font-style: italic;
-  color: #ffffff;
-}
-
-/* Mobile Responsive */
-@media (max-width: 680px) {
-  body {
-    flex-direction: column;
-    gap: 2.5rem;
-    padding: 2rem 1.5rem;
-  }
-  
-  nav {
-    position: static;
-  }
+h1, h2, h3, h4, h5, h6 {
+  color: #000080;
 }
