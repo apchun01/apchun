@@ -1,24 +1,13 @@
-
 body {
-  background-color: #ffffff;
-  color: #000000;
-  font-family: monospace; 
+  background-color: #000;
+  color: #fff;
+  font-family: monospace;
 }
 
-
-a, 
-nav a, 
-.sidebar a {
-  color: #000000;
-  text-decoration: none;
+a {
+  color: #fff;
 }
-
-a:hover, 
-nav a:hover {
-  text-decoration: underline;
-}
-
 
 h1, h2, h3, h4, h5, h6 {
-  color: #000080;
+  color: #0000ff;
 }
