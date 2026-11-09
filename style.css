@@ -1,22 +1,32 @@
-/* 1. Page Reset & Layout Grid */
-* {
-  box-sizing: border-box;
+/* Page Setup */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #000000;
   color: #ffffff;
   font-family: monospace;
-  font-size: 14px;
-  line-height: 1.6;
+  font-size: 12px; /* Reduced from 14px for smaller overall text */
+  line-height: 1.5;
   margin: 0;
   padding: 40px;
   display: flex;
-  gap: 60px; /* Space between left menu and right content */
+  gap: 60px;
   max-width: 900px;
 }
 
-/* 2. Left Sticky Navigation Menu */
+/* Links */
+a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Left Navigation Menu */
 nav {
   position: sticky;
   top: 40px;
@@ -29,6 +39,7 @@ nav {
   text-decoration: none;
   display: block;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 nav ul {
@@ -38,7 +49,7 @@ nav ul {
 }
 
 nav li {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 nav a {
@@ -50,35 +61,32 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* 3. Main Content Area & Section Headers */
+/* Main Content Area & Headers */
 main {
   flex: 1;
 }
 
 section {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
-h3 {
-  color: #0000ff; /* Subtitle section headers in blue */
-  font-size: 1rem;
+/* All headers restored to white and reduced in size */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff; /* Restored to white */
+  font-size: 0.95rem; /* Slightly smaller header font size */
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 p {
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
-a {
-  color: #ffffff;
-}
-
-/* 4. Custom Classes from your index.html */
+/* Custom Image & Formatting Classes */
 .profile-img {
-  max-width: 200px;
+  max-width: 180px;
   height: auto;
   margin-bottom: 15px;
   display: block;
