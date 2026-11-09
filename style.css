@@ -106,11 +106,18 @@ p {
   nav {
     position: static;   
     width: 100%;
-    min-width: 100%;       
+    min-width: 0;       
   }
-
+  
+nav ul li {
+    display: inline-block;
+    margin-right: 12px;
+    margin-bottom: 6px;
+  }
+  
   main {
     width: 100%;
+    min-width: 0;
   }
 }
 
