@@ -1,4 +1,4 @@
-/* Page Setup */
+
 html {
   scroll-behavior: smooth;
 }
@@ -7,7 +7,7 @@ body {
   background-color: #000000;
   color: #ffffff;
   font-family: monospace;
-  font-size: 12px; /* Reduced from 14px for smaller overall text */
+  font-size: 12px; 
   line-height: 1.5;
   margin: 0;
   padding: 40px;
@@ -16,7 +16,7 @@ body {
   max-width: 900px;
 }
 
-/* Links */
+
 a {
   color: #ffffff;
   text-decoration: underline;
@@ -26,7 +26,7 @@ a:hover {
   text-decoration: none;
 }
 
-/* Left Navigation Menu */
+
 nav {
   position: sticky;
   top: 40px;
@@ -61,7 +61,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Main Content Area & Headers */
+
 main {
   flex: 1;
 }
@@ -70,10 +70,9 @@ section {
   margin-bottom: 40px;
 }
 
-/* All headers restored to white and reduced in size */
 h1, h2, h3, h4, h5, h6 {
-  color: #ffffff; /* Restored to white */
-  font-size: 0.95rem; /* Slightly smaller header font size */
+  color: #ffffff; 
+  font-size: 0.95rem;
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 12px;
@@ -84,7 +83,7 @@ p {
   margin-bottom: 12px;
 }
 
-/* Custom Image & Formatting Classes */
+
 .profile-img {
   max-width: 180px;
   height: auto;
