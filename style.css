@@ -95,6 +95,25 @@ p {
   display: block;
 }
 
+@media (max-width: 768px) {
+  body {
+    flex-direction: column; 
+    padding: 20px;          
+    gap: 30px;             
+  }
+
+  nav {
+    position: static;   
+    min-width: 100%;       
+  }
+
+  nav ul li {
+    display: inline-block;  
+    margin-right: 15px;
+    margin-bottom: 8px;
+  }
+}
+
 .journal-title {
   font-style: italic;
 }
