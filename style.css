@@ -39,7 +39,7 @@ nav {
   text-decoration: none;
   display: block;
   margin-bottom: 20px;
-  font-weight: bold;
+  font-weight: normal;
 }
 
 nav ul {
@@ -72,8 +72,8 @@ section {
 
 h1, h2, h3, h4, h5, h6 {
   color: #ffffff; 
-  font-size: 0.95rem;
-  font-weight: bold;
+  font-size: inherit;
+  font-weight: normal;
   margin-top: 0;
   margin-bottom: 12px;
 }
