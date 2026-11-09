@@ -1,36 +1,89 @@
+/* 1. Page Reset & Layout Grid */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #000000;
   color: #ffffff;
   font-family: monospace;
   font-size: 14px;
-  line-height: 1.5;
-  margin: 20px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  gap: 60px; /* Space between left menu and right content */
+  max-width: 900px;
+}
+
+/* 2. Left Sticky Navigation Menu */
+nav {
+  position: sticky;
+  top: 40px;
+  height: fit-content;
+  min-width: 180px;
+}
+
+.nav-title {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  margin-bottom: 8px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* 3. Main Content Area & Section Headers */
+main {
+  flex: 1;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h3 {
+  color: #0000ff; /* Subtitle section headers in blue */
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 15px;
 }
 
 a {
   color: #ffffff;
-  text-decoration: underline;
 }
 
-a:hover {
-  text-decoration: none;
+/* 4. Custom Classes from your index.html */
+.profile-img {
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 15px;
+  display: block;
 }
 
-ul {
-  list-style-type: disc;
-  padding-left: 20px;
-  margin-top: 5px;
-  margin-bottom: 20px;
-}
-
-li {
-  margin-bottom: 3px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: #0000ff;
-  font-size: 1rem;
-  font-weight: bold;
-  margin-top: 25px;
-  margin-bottom: 10px;
+.journal-title {
+  font-style: italic;
 }
